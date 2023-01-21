@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@300&display=swap');
+
+@keyframes slidein{
+    from {
+        opacity: 0;
+        transform: translateX(-800px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+html{
+    background-color: aliceblue;
+    font-family: 'Asap', sans-serif;
+    font-size: larger;
+}
+#form2{
+    visibility: hidden;
+    position: absolute;
+    right: 41vw;
+    top: 40vh;
+}
+#form1{
+    visibility: visible;
+}
+
+#form1{
+    position: absolute;
+    right: 41vw;
+    top: 40vh;
+   animation-name: slidein;
+   animation-duration: 1s;
+}
+#i_e-mail{
+    width: 20rem;
+}
+#i_password{
+    width: 20rem;
+}
